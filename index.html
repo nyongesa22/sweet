@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <h1 class="title">Hello World! </h1>
+      <p id="currentTime"></p>
+      <script src="script.js"></script>
+  </body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stima</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('images/icon-192.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: white;
+    }
+    h1, h2, p {
+      text-align: center;
+    }
+    .container, .engineer-list {
+      background: rgba(0, 0, 50, 0.6);
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 600px;
+    }
+    input, select, textarea, button {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      font-size: 1em;
+    }
+    input, select, textarea {
+      background-color: #fff;
+      color: #000;
+    }
+    button {
+      background: linear-gradient(to right, #007BFF, #28a745);
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background: linear-gradient(to right, #ff7f00, #28a745);
+    }
+    .engineer {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 15px;
+      border: 1px solid #fff;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 50, 0.8);
+      font-size: 0.9em;
+      color: #fff;
+    }
+    .buttons {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .buttons button, .buttons a button {
+      margin: 5px;
+    }
+    .main-heading {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: 3em;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .slogan {
+      font-family: 'Quicksand', sans-serif;
+      font-size: 1.3em;
+      text-align: center;
+      margin: 5px 0 15px 0;
+    }
+    .subheading {
+      font-size: 1.2em;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+  </style>
+</head>
+<body>
+  <div class="main-heading">STIMA</div>
+  <div class="slogan">Ignite Your Experience</div>
+  <div class="subheading">Order an Electrical Engineer</div>
+
+  <div class="container">
+    <form id="serviceForm" action="https://formsubmit.co/simiyunyongesa8022@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="text" name="phone" placeholder="Your Phone Number" required />
+      <input type="text" name="location" placeholder="Your Location" required />
+
+      <select name="service" required>
+        <option value="">Select Service</option>
+        <option value="Repair">Repair</option>
+        <option value="Solar Installation">Solar Installation</option>
+        <option value="Electrical Installation">Electrical Installation</option>
+        <option value="CCTV Installation">CCTV Installation</option>
+        <option value="Electric Fence Installation">Electric Fence Installation</option>
+      </select>
+
+      <textarea name="map_location" placeholder="Paste Google Maps location link here" required></textarea>
+      <button type="submit">Request Service</button>
+    </form>
+    <p id="response"></p>
+  </div>
+
+  <h2>Available Engineers</h2>
+  <div class="engineer-list">
+    <div class="engineer">
+      <h3>Engineer Ismael</h3>
+      <p>Specialty: Solar Installation</p>
+      <p>Location: Nakuru</p>
+    </div>
+    <div class="engineer">
+      <h3>Engineer George</h3>
+      <p>Specialty: Electrical Installation</p>
+      <p>Location: Nakuru</p>
+    </div>
+    <div class="engineer">
+      <h3>Engineer Brian</h3>
+      <p>Specialty: CCTV Installation</p>
+      <p>Location: Nakuru</p>
+    </div>
+    <div class="engineer">
+      <h3>Engineer Mutua</h3>
+      <p>Specialty: Electric Fence Installation</p>
+      <p>Location: Nakuru</p>
+    </div>
+  </div>
+
+  <h2>Contact Us</h2>
+  <p>Mobile Service Number: <strong>0115371934</strong></p>
+
+  <!-- Extra Buttons -->
+  <div class="buttons">
+    <button onclick="alert('Please call us at 0115371934 to understand our terms and conditions.')">
+      📜 Terms & Conditions
+    </button>
+
+    <a href="https://wa.me/254115371934" target="_blank" style="text-decoration: none;">
+      <button><i class="fab fa-whatsapp"></i> WhatsApp Help</button>
+    </a>
+
+    <a href="tel:0115371934" style="text-decoration: none;">
+      <button><i class="fas fa-phone"></i> Call</button>
+    </a>
+
+    <a href="sms:0115371934" style="text-decoration: none;">
+      <button><i class="fas fa-comment-dots"></i> Text</button>
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Stima<br>
+    GEORGE & Co
+  </footer>
+</body>
+</html>
